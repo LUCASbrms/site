@@ -10,3 +10,26 @@ body {
   width: 100vw;
   background: linear-gradient(180deg, #363467 0%, rgba(30, 29, 79, 0.8) 100%);
 }
+
+.home-link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.home-link:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+.app-link,
+.app-link:visited { 
+  color: rgb(255, 255, 255); 
+  text-decoration: none; 
+  font-weight: 500; 
+  transition: color 0.2s ease; 
+}
+
+.app-link:hover {
+  color: #cccccc; 
+  text-decoration: underline; 
+}
