@@ -10,7 +10,15 @@ function Login() {
         <button type="submit">Entrar</button>
       </form>
       <br />
-      <Link to="/cadastro" className="app-link">Não tem conta? Cadastre-se</Link>
+      <div>
+  <Link to="/recuperar-senha" className="app-link" style={{ marginRight: '15px' }}>
+    Esqueceu a senha?
+  </Link>
+
+  <Link to="/cadastro" className="app-link">
+    Não tem conta? Cadastre-se
+  </Link>
+</div>
     </div>
   );
 }

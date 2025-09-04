@@ -1,0 +1,21 @@
+.recuperar-container {
+  text-align: center;
+  margin-top: 50px;
+}
+.recuperar-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+}
+.recuperar-input {
+  margin: 10px 0;
+  padding: 10px;
+}
+.recuperar-button {
+  padding: 10px;
+  cursor: pointer;
+}
+.message {
+    margin-top: 15px;
+}
