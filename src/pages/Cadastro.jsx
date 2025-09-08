@@ -1,53 +1,53 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './Cadastro.css'; 
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "../styles/auth.css";
 
-function Cadastro() {
-  const [nome, setNome] = useState('');
-  const [email, setEmail] = useState('');
-  const [senha, setSenha] = useState('');
+export default function Cadastro() {
+  const [nome, setNome] = useState("");
+  const [email, setEmail] = useState("");
+  const [senha, setSenha] = useState("");
 
   const handleCadastro = (e) => {
     e.preventDefault();
-    alert(`Cadastro realizado!\nNome: ${nome}\nEmail: ${email}`);
+    console.log("cadastro", { nome, email, senha });
   };
 
   return (
-    <div className="cadastro-container">
-      <h1>Cadastro</h1>
-      <form className="cadastro-form" onSubmit={handleCadastro}>
+    <div className="auth-container">
+      <form className="auth-form" onSubmit={handleCadastro}>
+        <h1 className="auth-title">Crie sua conta 🚀</h1>
+        <p className="auth-subtitle">Preencha os dados abaixo</p>
+
         <input
-          className="cadastro-input"
+          className="auth-input"
           type="text"
-          placeholder="Digite seu nome"
+          placeholder="Nome"
           value={nome}
           onChange={(e) => setNome(e.target.value)}
-          required
         />
+
         <input
-          className="cadastro-input"
+          className="auth-input"
           type="email"
-          placeholder="Digite seu email"
+          placeholder="E-mail"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          required
         />
+
         <input
-          className="cadastro-input"
+          className="auth-input"
           type="password"
-          placeholder="Crie uma senha"
+          placeholder="Senha"
           value={senha}
           onChange={(e) => setSenha(e.target.value)}
-          required
         />
-        <button className="cadastro-button" type="submit">Cadastrar</button>
+
+        <button className="auth-button" type="submit">Cadastrar</button>
+
+        <p className="auth-link">
+          Já tem conta? <Link to="/login">Faça login</Link>
+        </p>
       </form>
-      <p>
-        Já tem conta? <Link to="/login" className="app-link">Fazer login</Link>
-      </p>
     </div>
   );
 }
-
-export default Cadastro;
-
