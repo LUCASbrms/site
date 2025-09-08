@@ -8,9 +8,7 @@ export default function Login() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    // teste rápido: console.log pra garantir que o submit acontece
     console.log("tentando logar", { email, senha });
-    // aqui vai sua chamada api.post(...)
   };
 
   return (
