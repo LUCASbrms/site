@@ -19,7 +19,7 @@ export default function Home() {
         <section className="hero container">
           <div className="hero-left">
             <h2 className="hero-title">
-              Transforme seu WhatsApp em um assistente 24/7
+              Transforme seu WhatsApp em um assistente
             </h2>
             <p className="hero-sub">
               Receba transcrições automáticas de áudios em português e inglês,
@@ -93,15 +93,15 @@ export default function Home() {
           <h3>Como funciona</h3>
           <ol className="steps">
             <li>
-              <strong>1. Cadastre-se e assine:</strong> pague via Stripe e ganhe
+              <strong> Cadastre-se e assine:</strong> pague via Stripe e ganhe
               acesso ao bot privado no WhatsApp.
             </li>
             <li>
-              <strong>2. Conecte seu número:</strong> nós provisionamos um chat
+              <strong> Conecte seu número:</strong> nós provisionamos um chat
               particular com o seu bot (via Baileys).
             </li>
             <li>
-              <strong>3. Use quando quiser:</strong> envie áudios, mensagens
+              <strong> Use quando quiser:</strong> envie áudios, mensagens
               ou prompts de imagem — nossa IA (OpenAI) responde em segundos.
             </li>
           </ol>
@@ -112,7 +112,7 @@ export default function Home() {
             <h4>Plano Mensal</h4>
             <p className="price">R$ 29,90 / mês</p>
             <ul>
-              <li>Transcrições ilimitadas (com fair-use)</li>
+              <li>Transcrições ilimitadas</li>
               <li>Geração de imagens</li>
               <li>Agendamentos e lembretes</li>
               <li>Suporte via chat</li>
