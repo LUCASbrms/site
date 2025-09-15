@@ -117,7 +117,10 @@ export default function Home() {
               <li>Agendamentos e lembretes</li>
               <li>Suporte via chat</li>
             </ul>
-            <Link to="/cadastro" className="cta-primary fullwidth">Comece já — Assinar</Link>
+            <Link to="/compra" className="botao-verde">
+              Comece já — Assinar
+            </Link>
+
           </div>
 
           <div className="pricing-note">
